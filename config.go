@@ -26,6 +26,12 @@ type Config struct {
 	// authboss.StoreEmail, authboss.StoreUsername (StoreEmail is default)
 	PrimaryID string
 
+	// IdentityID is identifier of user. It can be :
+	// - Username
+	// - Email
+	// - Telephone number
+	IdentityID []string
+
 	// Allow the user to be automatically signed in after confirm his account
 	AllowInsecureLoginAfterConfirm bool
 	// Allow the user to be automatically signed in after reset his password
